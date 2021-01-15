@@ -1,5 +1,5 @@
 import React , {Component}from 'react'
-import FirstInfo from '../first info/first info'
+
 import MainPage from '../mainPage/mainpage'
 import axios from 'axios'
 
