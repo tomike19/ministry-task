@@ -1,44 +1,41 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './first.info.css'
-import   emblem1 from '../../img/emblem1.png'
+import   emblem from '../../img/emblem.png'
 
-  
-  
-  const FirstInfo= (props) =>{
+class FirstInfo extends Component {
+  render() {
     return (
-
-      <div className="info ml-5">
+      <div>
+         <div className="info ml-5">
          <div className="row">
               <div className='img-responsive'>
-                 <img src={emblem1} className='text-left image' alt=""/>
+                 <img src={emblem} className='text-left image' alt=""/>
              </div>
         <div className="text-left ml-4">
-           <h1 class="text mt-5">{props.item.name}</h1>
+           <h1 class="text mt-5">{this.props.name}</h1>
+           
         </div>
         </div>
         <div className="pt-4">
-        <div className="minister-name text-left"><strong>Minister:
-          </strong>{props.item.minister}</div>
-          <div className="minister-name text-left pt-3">
-             <strong> Minister of State </strong>{props.item.minister_state}
+        <div className="minister-state text-left"><strong>Minister:
+          </strong>{this.props.minister}</div>
+          <div className="minister-state text-left pt-3">
+             <strong> Minister of State </strong>{this.props.minister_state}
           </div>
-          <div className="hr"><hr/></div>
+          
         </div>
       </div>
-     
-
-     
-   
-      
-     
-
-      
-)
-  
+      </div>
+    )
   }
-  
-    
-  
-
+}
 
 export default FirstInfo
+
+
+
+
+
+  
+  
+  
