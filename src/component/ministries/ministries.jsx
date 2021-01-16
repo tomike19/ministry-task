@@ -16,7 +16,7 @@ class Ministries extends Component {
   }
     
       componentDidMount (){
-        axios.get('https://ministries.herokuapp.com/ministries/?format=json').then(res =>{
+        axios.get('https://stark-plateau-72108.herokuapp.com/ministries/?format=json').then(res =>{
           const details = res.data
           console.log(details)
           this.setState ({
